@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events in JS - DOM Manipulation</title>
+  </head>
+  <body>
+    <h1 class="heading green-text" name="h1" style="color: green">
+      Events in JS DOM Manipulation
+    </h1>
+    <nav id="main-nav">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact Us</a>
+    </nav>
+    <p>
+      Events in JavaScript DOM manipulation refer to actions or occurrences that
+      happen in the browser, such as a mouse click, keypress, page load, or form
+      submission. Handling events is a fundamental aspect of web development,
+      allowing you to create interactive and responsive user interfaces.
+    </p>
+    <input type="password" name="pass" id="pass" />
+    <p id="error" style="color: orangered"></p>
+    <button id="try-me">open nav</button>
+    <button id="close-nav">close nav</button>
+    <a href="https://youtube.com" id="youtube">Youtube</a>
+    <script src="events.js"></script>
+    <style>
+      button {
+        background-color: green;
+        color: white;
+        border: none;
+        padding: 10px 18px;
+        font-size: 22px;
+        font-family: sans-serif;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+      nav {
+        padding: 20px;
+        display: none;
+        flex-direction: column;
+        gap: 18px;
+        position: fixed;
+        top: 40px;
+        right: 0;
+        background-color: antiquewhite;
+        border-radius: 5px;
+        animation: slide-in-tr 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 20px;
+      }
+
+      @keyframes slide-in-tr {
+        0% {
+          transform: translateY(-1000px) translateX(1000px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0) translateX(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </body>
+</html>
