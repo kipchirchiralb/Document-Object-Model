@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+  color: rgb(1, 21, 1);
+  padding: 40px 100px;
+  text-align: center;
+}
+
+form {
+  width: 40%;
+  margin: 10px auto;
+}
+input,
+select {
+  display: block;
+  width: 100%;
+  border: 1px solid rgb(1, 21, 1);
+  margin-bottom: 16px;
+  padding: 10px 18px;
+  font: inherit;
+  background-color: rgba(1, 21, 1, 0.1);
+}
+label {
+  text-align: left;
+  display: block;
+  font-size: 18px;
+}
+.my-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.movie {
+  width: 20%;
+  border: 1px solid rgb(1, 21, 1);
+  border-radius: 8px;
+  transition: all 0.3s linear;
+  padding: 18px;
+}
+.movie:hover {
+  transform: scale(1.15);
+}
+#error {
+  color: orangered;
+}
+
+.movie button {
+  padding: 10px 16px;
+  border: none;
+  background-color: rgba(1, 21, 1, 0.6);
+  color: whitesmoke;
+}
+.movie .watched {
+  background-color: green;
+  
+}

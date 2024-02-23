@@ -49,3 +49,5 @@ document.getElementById("pass").addEventListener("keypress", (event) => {
     document.querySelector("#error").textContent = "Password is too Weak";
   }
 });
+
+// 

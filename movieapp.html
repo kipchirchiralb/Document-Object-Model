@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Movies/Series List</title>
+    <link rel="stylesheet" href="movieapp.css" />
+  </head>
+  <body>
+    <h1>My Movies/Series List</h1>
+    <p>Manage a list of movies(Add new movies, mark movies as watched)</p>
+    <form action="">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <div>
+        <label for="category">Category</label>
+        <select name="category" id="category">
+          <option value="movie">Movie</option>
+          <option value="series">Series</option>
+        </select>
+      </div>
+      <div>
+        <label for="relaease">Release Date</label>
+        <input type="date" name="relaease" id="release" />
+      </div>
+      <input type="submit" value="+ Add to MyList " />
+      <p id="error"></p>
+    </form>
+    <div class="my-list" id="my-list"></div>
+
+    <script src="movieapp.js"></script>
+  </body>
+</html>
